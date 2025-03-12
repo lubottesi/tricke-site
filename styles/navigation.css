@@ -1,0 +1,40 @@
+.nav-container {
+    background-color: rgb(59 130 246 / 0.5);
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    padding: 0.5rem 1rem;
+    color: #4a5568;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #2d3748;
+}
+
+.nav-link.active {
+    color: #2d3748;
+    font-weight: bold;
+}
+
+.mobile-menu-button {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-menu-button {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.open {
+        display: flex;
+        flex-direction: column;
+    }
+}
